@@ -10,7 +10,6 @@
         <card-ingredient-list :recipe="recipe" />
         <card-details-component :recipe="recipe" />
       </div>
-      <card-step-list :recipe="recipe" />
     </div>
     <v-divider></v-divider>
     <div class="btn-container">
@@ -25,7 +24,6 @@ import { Recipe } from "../../../common/model";
 import CardImageComponent from "./CardImage.vue";
 import CardTitleComponent from "./CardTitle.vue";
 import CardIngredientList from "./CardIngredientList.vue";
-import CardStepList from "./CardStepList.vue";
 import CardDetailsComponent from "./CardDetails.vue";
 
 interface Props {
@@ -41,7 +39,6 @@ export default Vue.extend({
     CardTitleComponent,
     CardIngredientList,
     CardDetailsComponent,
-    CardStepList,
   },
   props: {
     recipe: { required: true },
